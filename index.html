@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="home.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src = "home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- IONICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>WHITEROCKET</title>
+</head>
+<body> 
+  <!-- #1C67D2 -->
+<!-- HOME -->
+<div class = "home">
+  <div class = "navBar">
+    <a class = "link" style = "color:#e78d17">HOME</a>
+    <a class = "link" onclick = "destinationsScroll()">DESTINATIONS</a>
+    <a class = "link" onclick = "whyUsScroll()">WHY US?</a>
+    <div class = "logo"></div>
+    <a href="service.html">SERVICE</a>
+    <a href="contact.html">CONTACT US</a>
+    <a class = "link" onclick = "FAQsScroll()">FAQs</a>
+  </div>
+  <div class = "home_header">
+    <p class = "header">SPACEROCKET</p> <br><hr><br><br>
+    <p class = "subheader">Trusted. Reliable. Quality.</p>
+  </div>
+  <video class = "video" src="video/Universe.mp4" muted autoplay loop></video>
+</div>
+<!-- DESTINATIONS -->
+<div class = "destinations" id = "destinations">
+  <div class = "destinations_text">
+    <p class = "header">SPACE TRAVEL</p> <hr> <br>
+    <p class = "subheader">DESTINATIONS</p>
+    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="img/flipImage11.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/flipImage22.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="img/flipImage11.jpg" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<!-- WHY US -->
+<div class = "whyUs" id = "whyUs">
+  <div class = "whyUs_img2"></div>
+  <div class = "whyUs_text">
+    <p class = "header">WHY CHOOSE US?</p>
+    <p class = "text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div class = "whyUs_logos">
+      <img src="img/nasa.png" alt="">
+      <img src="img/spaceX.png" alt="">
+      <img src="img/blueOrigin.png" alt="">
+    </div>
+  </div>
+</div>
+<!-- FAQs -->
+<div class = "FAQs" id = "FAQs">
+
+  <div class = "FAQs_text">
+    <p style = "font-size:5vw">FREQUENTLY ASKED QUESTIONS</p>
+    <br><br>
+          <a class = "question" onclick="question(1)">
+            Who are we?
+            <ion-icon class = "plus" id = "plus1" name="add-outline"></ion-icon>
+            <ion-icon class = "minus" id = "minus1" name="remove-outline"></ion-icon>
+          </a>
+          <div class = "answer" id = "answer1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <a class = "question" onclick="question(2)">
+            Why are we?
+            <ion-icon class = "plus" id = "plus2" name="add-outline"></ion-icon>
+            <ion-icon class = "minus" id = "minus2" name="remove-outline"></ion-icon>
+          </a>
+          <div class = "answer" id = "answer2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <a class = "question" onclick="question(3)">
+            What is God?
+            <ion-icon class = "plus" id = "plus3" name="add-outline"></ion-icon>
+            <ion-icon class = "minus" id = "minus3" name="remove-outline"></ion-icon>
+          </a>
+          <div class = "answer" id = "answer3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+          <a class = "question" onclick="question(4)">
+            Is there life after death?
+            <ion-icon class = "plus" id = "plus4" name="add-outline"></ion-icon>
+            <ion-icon class = "minus" id = "minus4" name="remove-outline"></ion-icon>
+          </a>
+          <div class = "answer" id = "answer4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+  </div>
+</div>
+<!-- FOOTER -->
+<div class = "footer">
+  <div class = "footer_top">
+    <p class = "whiterocket">SPACE<mark style = "background-color: #e78d17;border: 1px solid black; color:white;">R</mark>OCKET</p>
+    <div class = "footer_media">
+    <a href=""><img src="img/facebook.png" alt=""></a>
+    <a href=""><img src="img/instagram.png" alt=""></a>
+    <a href=""><img src="img/twitter.png" alt=""></a>
+    </div>
+  </div>
+  <div class = "footer_bottom">
+    <div class = "footer_logo"></div>
+    <div class = "footer_links">
+      <p style = "font-size: 1vw; font-family: 'Poppins'; margin-top: 5px;">WHITEROCKET</p>
+      <a href="">Home</a> <br>
+      <a href="#destinations">Destinations</a> <br>
+      <a href="#whyUs">Why Us?</a> <br>
+      <a href="service.html">Service</a> <br>
+      <a href="">Contact us</a> <br>
+      <a href="#FAQs">FAQs</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
