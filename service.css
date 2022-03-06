@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+hr {
+    background-color: #e78d17;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e78d17; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b66f12; 
+  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+/* HOME */
+
+.service {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    user-select: none;
+}
+.video {
+    width:auto;
+    height: auto;
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    background-size: cover;
+    overflow: hidden;    
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+}
+.navBar {
+    width: 70%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.navBar a {
+    margin:auto;
+    text-decoration: none;
+    font-family: 'Poppins';
+
+    color: white;
+    font-size: 1.1vw;
+}
+.navBar a:hover {
+    color: #e78d17;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo {
+    width: 14%;
+    height: 100%;
+    background-image: url('img/spaceLogo2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.home_header {
+    width: 45vw;
+    height: 40vh;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 800;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    font-size: 6vw;
+    font-weight: 800;
+}
+.subheader {
+    font-size: 3vw;
+    font-weight: 500;
+}
+.text {
+    color: #e78d17;
+    font-size: 1vw;
+    font-weight: 300;
+}
+.text2 {
+    color: white;
+    font-weight: 400;
+}
+
+/* INFORMATION */
+
+.information {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    user-select: none;
+    background-image: url('img/informationImage.png');
+    background-size: contain;
+}
+.information_text {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    color: white;
+
+}
+.information_container {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    position:relative;
+}
+.information_boxes {
+    width: 90%;
+    height:90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.information_box {
+    width: 100%;
+    height: 30%;
+    display: flex;
+
+    margin-top: 3%;
+}
+.information_box_head {
+    height: 100%;
+    width: 35%;
+    background-color: rgba(235, 235, 235, 0.5);
+
+}
+.information_box_head_img1 {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('img/designIcon1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.information_box_head_img2 {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('img/designIcon2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.information_box_head_img3 {
+    width: 100%;
+    height: 100%;
+
+    background-image: url('img/designIcon3.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.information_box_body {
+    height: 100%;
+    width: 65%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    padding: 10px;
+    text-align: center;  
+
+}
+
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    user-select: none;
+}
+.footer_top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    position: relative;
+    background-color: #e78d17;
+}
+.footer_media {
+    width:15%;
+    height:100%;
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2vw;
+    position:absolute;
+    right: 0;
+}
+.footer_top a {
+    height: 80%;
+}
+.footer_top img {
+    width: 100%;
+    height: 100%;
+}
+.footer_top a:hover {
+    transform: scale(1.05,1.05)
+}
+.footer_bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.whiterocket {
+    font-size: 4.5vw;
+    font-weight: 800;
+    color: white;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    text-align: center;
+}
+.footer_logo {
+    width: 14%;
+    height: 100%;
+    background-image: url('img/spaceLogo2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer_links {
+    width:30%;
+    height:100%;
+    color:white;
+    text-align: center;
+}
+.footer_links a {
+    color: #e78d17;
+}
+.footer_links a:hover {
+    color: white;
+    text-decoration: none;
+}

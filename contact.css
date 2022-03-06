@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+hr {
+    background-color: #e78d17;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #e78d17; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b66f12; 
+  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+/* HOME */
+
+.contact {
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    background-image: url('img/informationImage.png');
+    background-size: 100% 200%;
+
+    position: relative;
+    user-select: none;
+}
+.navBar {
+    width: 70%;
+    height: 20vh;
+    position: absolute;
+    display: flex;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+.navBar a {
+    margin:auto;
+    text-decoration: none;
+    font-family: 'Poppins';
+
+    color: white;
+    font-size: 1.1vw;
+}
+.navBar a:hover {
+    color: #e78d17;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo {
+    width: 14%;
+    height: 100%;
+    background-image: url('img/spaceLogo2.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.home_header {
+    width: 45vw;
+    height: 40vh;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 800;
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+.header {
+    font-size: 6vw;
+    font-weight: 800;
+}
+.subheader {
+    font-size: 3vw;
+    font-weight: 500;
+}
+.text {
+    color: black;
+    font-size: 2vw;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+p {
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+
+/* INFORMATION */
+
+.information {
+    width: 100%;
+    height: 50vh;
+    user-select: none;
+    position: relative;
+}
+.information_container {
+    width: 70%;
+    height: 90%;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+}
+.information_card {
+    width: 30%;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(204, 204, 204);
+}
+.information_card_head {
+    width: 100%;
+    height: 50%;
+
+}
+.information_card_head_img1 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+    border-radius: 50%;
+    background-image: url('img/customerService.png');
+    background-size: 100% 100%;
+}
+.information_card_head_img2 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+    border-radius: 50%;
+    background-image: url('img/informationBook.png');
+    background-size: 100% 100%;
+}
+.information_card_head_img3 {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+
+    border-radius: 50%;
+    background-image: url('img/joinUs.png');
+    background-size: 100% 100%;
+}
+.information_card_body {
+    width: 100%;
+    height: 50%;
+}
+.infoText {
+    font-family: 'Poppins';
+    font-size: 1vw;
+    font-weight: 300;
+    padding: 10px;
+    text-align: center;
+}
+
+/* LOCATION */
+
+.location {
+    width: 100%;
+    height: 155vh;
+    text-align: center;
+}
+
+.contact_us {
+    width: 80%;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(204, 204, 204);
+}
+.contact_us_left {
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border: 1px solid rgb(204, 204, 204);
+}
+.contact_information {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.contact_information_PNG {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+}
+.contact_information_PNG img {
+    width: 6vw;
+}
+.contact_information_PNG p {
+    margin-top: 10px;
+}
+.contact_us_right {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    /* border: 1px solid rgb(204, 204, 204); */
+}
+form {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid rgb(204, 204, 204); */
+}
+form input {
+    width:100%;
+    height:5vh;
+    border: 0;
+}
+form p {
+    user-select: none;
+}
+form label {
+    text-align: left;
+    width: 100%;
+    user-select: none;
+    font-family: 'Poppins';
+    font-weight: 300;
+}
+form textarea {
+    text-align: left;
+    width: 100%;
+    border: 0;
+}
+form textarea:focus {
+    outline: 0;
+}
+form input:focus {
+    outline: 0;
+}
+/* FOOTER */
+
+.footer {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    user-select: none;
+}
+.footer_top {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    position: relative;
+    background-color: #e78d17;
+}
+.footer_media {
+    width:15%;
+    height:100%;
+    display:flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2vw;
+    position:absolute;
+    right: 0;
+}
+.footer_top a {
+    height: 80%;
+}
+.footer_top img {
+    width: 100%;
+    height: 100%;
+}
+.footer_top a:hover {
+    transform: scale(1.05,1.05)
+}
+.footer_bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+}
+.whiterocket {
+    font-size: 4.5vw;
+    font-weight: 800;
+    color: white;
+    height: 100%;
+    width: 40%;
+    position: absolute;
+    text-align: center;
+}
+.footer_logo {
+    width: 14%;
+    height: 100%;
+    background-image: url('img/spaceLogo2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer_links {
+    width:30%;
+    height:100%;
+    color:white;
+    text-align: center;
+}
+.footer_links a {
+    color: #e78d17;
+}
+.footer_links a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
